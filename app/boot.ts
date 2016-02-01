@@ -1,4 +1,10 @@
 import {bootstrap}    from 'angular2/platform/browser'
-import {AppComponent} from './app.component'
+import {FlugSuchen} from './flug-suchen'
+import {HTTP_PROVIDERS} from 'angular2/http';
+import 'rxjs/add/operator/map';
 
-bootstrap(AppComponent);
+var services = [
+    HTTP_PROVIDERS  
+];
+
+bootstrap(FlugSuchen, services);
